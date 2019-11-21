@@ -1,0 +1,60 @@
+dataset reload -f
+# Dataset not found: 
+# Compile of Adder32bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ANDGate.v was successful.
+# Compile of Control.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of DecoderRegisterFile.v was successful.
+# Compile of MIPS_Processor.v was successful.
+# Compile of MIPS_Processor_TB.v was successful.
+# Compile of Multiplexer2to1.v was successful.
+# Compile of MUXRegisterFile.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of ProgramMemory.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.MIPS_Processor_TB
+# vsim -gui work.MIPS_Processor_TB 
+# Start time: 19:36:32 on Nov 20,2019
+# Loading work.MIPS_Processor_TB
+# Loading work.MIPS_Processor
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.ProgramMemory
+# Loading work.Adder32bits
+# Loading work.Multiplexer2to1
+# Loading work.RegisterFile
+# Loading work.DecoderRegisterFile
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.SignExtend
+# Loading work.ALUControl
+# Loading work.ALU
+# Loading work.DataMemory
+# Loading work.ShiftLeft2
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUV'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /MIPS_Processor_TB/DUV File: C:/Users/User/Desktop/Arqui/MIPSProcessor_ver1/MIPS_Processor_TB.v Line: 24
+# ** Warning: (vsim-3722) C:/Users/User/Desktop/Arqui/MIPSProcessor_ver1/MIPS_Processor_TB.v(24): [TFMPC] - Missing connection for port 'PortIn'.
+add wave -position end  sim:/MIPS_Processor_TB/clk
+add wave -position end  sim:/MIPS_Processor_TB/reset
+add wave -position end  sim:/MIPS_Processor_TB/PortIn
+add wave -position end  sim:/MIPS_Processor_TB/ALUResultOut
+add wave -position end  sim:/MIPS_Processor_TB/PortOut
+# Load canceled
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUV'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /MIPS_Processor_TB/DUV File: C:/Users/User/Desktop/Arqui/MIPSProcessor_ver1/MIPS_Processor_TB.v Line: 24
+# ** Warning: (vsim-3722) C:/Users/User/Desktop/Arqui/MIPSProcessor_ver1/MIPS_Processor_TB.v(24): [TFMPC] - Missing connection for port 'PortIn'.
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# End time: 21:54:54 on Nov 20,2019, Elapsed time: 2:18:22
+# Errors: 3, Warnings: 2
